@@ -1,1 +1,2 @@
-Static Website hosted in github pages for a lawyers business using Bootstrap.
+Static Website hosted in github pages.
+- Bootstrap;
