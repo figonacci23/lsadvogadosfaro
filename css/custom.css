@@ -221,6 +221,17 @@ body {
   box-shadow: var(--sc-shadow-lg);
 }
 
+.hero-logo {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+}
+
+.quem-somos-photo {
+  max-width: 620px;
+  width: 100%;
+}
+
 /* ---------- Quote card ---------- */
 .quote-card {
   position: relative;
@@ -328,6 +339,24 @@ body {
   display: block;
   color: var(--sc-muted);
   font-size: 0.85rem;
+}
+
+.team-email {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--sc-muted);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.team-email i {
+  color: var(--sc-accent);
+  margin-right: 0.4rem;
+}
+
+.team-email:hover {
+  color: var(--sc-accent);
 }
 
 /* ---------- Location & contact cards ---------- */
