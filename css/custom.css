@@ -199,25 +199,7 @@ body {
   color: var(--sc-accent);
 }
 
-.hero-image-wrap {
-  position: relative;
-}
-
-.hero-image-wrap::before {
-  content: "";
-  position: absolute;
-  inset: -1.5rem -1.5rem auto auto;
-  width: 70%;
-  height: 70%;
-  background: var(--sc-accent);
-  opacity: 0.15;
-  border-radius: var(--sc-radius-lg);
-  z-index: 0;
-}
-
 .hero-image-wrap img {
-  position: relative;
-  z-index: 1;
   box-shadow: var(--sc-shadow-lg);
 }
 
