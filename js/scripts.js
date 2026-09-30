@@ -3,5 +3,12 @@
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE)
 */
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+// Navbar: add a "scrolled" state once the page scrolls past the hero top
+const mainNav = document.getElementById('mainNav');
+if (mainNav) {
+    const updateNavState = () => {
+        mainNav.classList.toggle('scrolled', window.scrollY > 40);
+    };
+    window.addEventListener('scroll', updateNavState, { passive: true });
+    updateNavState();
+}

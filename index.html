@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <meta name="theme-color" content="#10192b" />
     <title>SC - Advogados</title>
     <!-- icon-->
     <link rel="icon" type="image/x-icon" href="assets/icons/LSBlack.ico" />
@@ -13,14 +14,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Custom SC Advogados design layer -->
+    <link href="css/custom.css" rel="stylesheet" />
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container px-5">
                 <a class="navbar-brand" href="/"><img src="assets/images/LSPRETOsembg.png" width="90" height="35"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,65 +31,64 @@
                     aria-expanded="false" aria-label="Toggle navigation"><span
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
                         <li class="nav-item"><a class="nav-link" href="#quemsomos">Quem somos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#areas">Áreas de Atuação</a></li>
                         <li class="nav-item"><a class="nav-link" href="#nossaequipa">A nossa equipa</a></li>
                         <li class="nav-item"><a class="nav-link" href="#ondeestamos">Onde Estamos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacte-nos">Contate-nos</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-accent btn-pill nav-cta" href="#contacte-nos">Fale Connosco</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark vh-100 d-flex align-items-center">
+        <header class="hero-section d-flex align-items-center">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-8 col-xl-7 col-xxl-6">
                         <div class="my-5 text-center text-xl-start">
+                            <span class="hero-eyebrow">Sociedade de Advogados &middot; Faro</span>
+                            <!-- Logo image pending: replace this heading with the new SC Advogados logo <img> once available -->
                             <!-- <h1 class="display-5 fw-bolder text-white mb-2">LS - ADVOGADOS</h1> -->
                             <a class="img-fluid rounded-3 my-4"><img src="assets/images/LSPRETOsembg.png" width="70%" height="10%"></a>
                             <p class="lead fw-normal text-white-50 mb-4">Apoiamos os nossos clientes</p>
-                            <p class="text-white-50 mb-3">Registo de inscrição na Ordem dos Advogados 26/21
-                                <span class="text-white mx-1">&middot;</span>
-                                NIPC: 516 367 390
-                            </p>
-                            <p>
-                                <a class="text-white-50 mb-4"
-                                    href="mailto:sandracaldeira-53303f@adv.oa.pt">sandracaldeira-53303f@adv.oa.pt</a>
-                            </p>
-                            <p>
-                                <a class="text-white-50 mb-4" href="mailto:sc.advogados.oa@gmail.com">sc.advogados.oa@gmail.com</a>
-                                <span class="text-white mx-1">&middot;</span>
-                                <a class="text-white-50 mb-4" href="tel:289880540">289 880 540</a>
-                            </p>
-                                <a class="text-white-50 mb-4" href="#ondeestamos">Rua Ataíde Oliveira 57 8000-222 Faro</a>
-                            <p>
-
-                            </p>
+                            <div class="mb-3">
+                                <span class="hero-badge">Registo OA 26/21</span>
+                                <span class="hero-badge">NIPC 516 367 390</span>
+                            </div>
+                            <ul class="hero-contact-list">
+                                <li><i class="bi bi-envelope"></i><a href="mailto:sandracaldeira-53303f@adv.oa.pt">sandracaldeira-53303f@adv.oa.pt</a></li>
+                                <li><i class="bi bi-envelope"></i><a href="mailto:sc.advogados.oa@gmail.com">sc.advogados.oa@gmail.com</a></li>
+                                <li><i class="bi bi-telephone"></i><a href="tel:289880540">289 880 540</a></li>
+                                <li><i class="bi bi-geo-alt"></i><a href="#ondeestamos">Rua Ataíde Oliveira 57, 8000-222 Faro</a></li>
+                            </ul>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <a class="btn btn-light btn-lg px-4 me-sm-3" href="#contactar">Contacte-nos!</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="#ondeestamos">Onde Estamos</a>
+                                <a class="btn btn-accent btn-lg btn-pill px-4 me-sm-3" href="#contacte-nos">Contacte-nos!</a>
+                                <a class="btn btn-outline-light btn-lg btn-pill px-4" href="#ondeestamos">Onde Estamos</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
-                            src="assets\images\sala 2.jpg" alt="..." /></div>
+                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                        <div class="hero-image-wrap d-inline-block">
+                            <img class="img-fluid rounded-4 my-5" src="assets\images\sala 2.jpg" alt="Escritório SC Advogados" />
+                        </div>
                     </div>
+                </div>
             </div>
         </header>
-        <br>
         <!-- Quem Somos section-->
         <section class="py-5" id="quemsomos">
             <div class="container px-5 my-5">
-                <div class="row gx-5">
-                    <div class="text-center">
-                        <h2 class="fw-bolder mb-0">Quem Somos</h2>
-                        <br>
-                    </div>
-                    <div>
-                        <p class="lead fw-normal text-muted mb-5">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Quem Somos</h2>
+                </div>
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-7">
+                        <p class="lead fw-normal text-muted mb-4">
                             A SC – Sociedade de Advogados é uma Sociedade de
                             Advogados de responsabilidade limitada que pauta a sua
                             atuação pela abordagem prática dos problemas dos seus
@@ -95,104 +97,105 @@
                             de consultoria jurídica em diversas Câmaras Municipais no Algarve e
                             advocacia contenciosa e preventiva nas várias áreas do direito.
                         </p>
-                        <p class="lead fw-normal text-muted mb-5">
+                        <p class="lead fw-normal text-muted mb-0">
                             Prestamos serviços jurídicos com excelência agregando máximo valor na forma como
                             encara os problemas dos seus clientes, superando expectativas e
                             estabelecendo relações éticas e comprometidas com os seus parceiros.
                         </p>
-                        <p class="lead fw-normal text-muted mb-5">
-                            Encaramos o Direito na mesma perspetiva que o
-                            filósofo Aristóteles: “A justiça consiste em tratar de forma igual os iguais e de
-                            forma desigual os desiguais, na medida em que se desigualam.” tendo sempre
-                            em primeira linha a defesa e os interesses dos seus clientes.
-                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="quote-card">
+                            <i class="bi bi-quote quote-icon"></i>
+                            <p class="mb-0">
+                                Encaramos o Direito na mesma perspetiva que o
+                                filósofo Aristóteles: “A justiça consiste em tratar de forma igual os iguais e de
+                                forma desigual os desiguais, na medida em que se desigualam.” tendo sempre
+                                em primeira linha a defesa e os interesses dos seus clientes.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Áreas de Atuação section-->
-        <section class="py-5" id="areas">
+        <section class="py-5 bg-light" id="areas">
             <div class="container px-5 my-5">
-                <div class="row gx-5">
-                    <div class="text-center">
-                        <h2 class="fw-bolder mb-0">Áreas de Atuação</h2>
-                        <p class="lead fw-normal text-muted mb-5">Apoiamos os nossos clientes (particulares e empresas)
-                            em assuntos de diversos ramos do direito</p>
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Áreas de Atuação</h2>
+                    <p class="lead fw-normal text-muted mb-0">Apoiamos os nossos clientes (particulares e empresas)
+                        em assuntos de diversos ramos do direito</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-bag"></i></div>
+                            <h3 class="h5 service-title">Direito Comercial e Societário</h3>
+                            <p class="service-text mb-0">Prestamos consultoria jurídica especializada em todas as vertentes do
+                                direito comercial, assegurando a conformidade legal de sociedades e empresas.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="row gx-5 row-cols-1 row-cols-md-3">
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3">
-                                    <i class="bi bi-bag"></i>
-                                </div>
-                                <h2 class="h5">Direito Comercial e Societário</h2>
-                                <p class="mb-0">Prestamos consultoria jurídica especializada em todas as vertentes do
-                                    direito comercial, assegurando a conformidade legal de sociedades e empresas.</p>
-                            </div>
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3">
-                                    <i class="bi bi-house-door"></i>
-                                </div>
-                                <h2 class="h5">Direito Imobiliário e da Construção</h2>
-                                <p class="mb-0">Aconselhamento jurídico em operações imobiliárias e construção, com foco
-                                    na segurança e regularidade jurídica dos projectos.</p>
-                            </div>
-                            <div class="col mb-5 mb-md-0 h-100">
-                                <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3">
-                                    <i class="bi bi-bank"></i>
-                                </div>
-                                <h2 class="h5">Direito Penal e Contra-Ordenacional</h2>
-                                <p class="mb-0">Defendemos os interesses dos nossos clientes em processos penais e
-                                    contra-ordenacionais, garantindo a sua representação eficaz.</p>
-                            </div>
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3">
-                                    <i class="bi bi-building"></i>
-                                </div>
-                                <h2 class="h5">Insolvência, Recuperação e Revitalização</h2>
-                                <p class="mb-0">Acompanhamento de processos de insolvência e recuperação de empresas,
-                                    com soluções eficazes para revitalização económica.</p>
-                            </div>
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3">
-                                    <i class="bi bi-briefcase"></i>
-                                </div>
-                                <h2 class="h5">Direito Laboral</h2>
-                                <p class="mb-0">Oferecemos apoio em todas as questões relacionadas com o direito
-                                    laboral, desde contratos de trabalho a litígios laborais.</p>
-                            </div>
-                            <div class="col mb-5 mb-md-0 h-100">
-                                <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3">
-                                    <i class="bi bi-people"></i>
-                                </div>
-                                <h2 class="h5">Direito da Família</h2>
-                                <p class="mb-0">Consultoria e apoio em matérias relacionadas com o direito da família,
-                                    incluindo divórcios, regulação das responsabilidades parentais e adopções.</p>
-                            </div>
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3">
-                                    <i class="bi bi-person-plus"></i>
-                                </div>
-                                <h2 class="h5">Direito Civil</h2>
-                                <p class="mb-0">Atuamos em diversas áreas do direito civil, assegurando a protecção dos
-                                    direitos dos nossos clientes em litígios ou contratos civis.</p>
-                            </div>
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3">
-                                    <i class="bi bi-file-earmark-text"></i>
-                                </div>
-                                <h2 class="h5">Contratos</h2>
-                                <p class="mb-0">Elaboração e análise de contratos, garantindo a sua conformidade legal e
-                                    proteção dos interesses dos nossos clientes.</p>
-                            </div>
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3">
-                                    <i class="bi bi-check-circle"></i>
-                                </div>
-                                <h2 class="h5">Atos Notários e Outros Serviços</h2>
-                                <p class="mb-0">Prestamos serviços de certificação de documentos e outros atos
-                                    notariais, assegurando a autenticidade e validade jurídica.</p>
-                            </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-house-door"></i></div>
+                            <h3 class="h5 service-title">Direito Imobiliário e da Construção</h3>
+                            <p class="service-text mb-0">Aconselhamento jurídico em operações imobiliárias e construção, com foco
+                                na segurança e regularidade jurídica dos projectos.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-bank"></i></div>
+                            <h3 class="h5 service-title">Direito Penal e Contra-Ordenacional</h3>
+                            <p class="service-text mb-0">Defendemos os interesses dos nossos clientes em processos penais e
+                                contra-ordenacionais, garantindo a sua representação eficaz.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-building"></i></div>
+                            <h3 class="h5 service-title">Insolvência, Recuperação e Revitalização</h3>
+                            <p class="service-text mb-0">Acompanhamento de processos de insolvência e recuperação de empresas,
+                                com soluções eficazes para revitalização económica.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-briefcase"></i></div>
+                            <h3 class="h5 service-title">Direito Laboral</h3>
+                            <p class="service-text mb-0">Oferecemos apoio em todas as questões relacionadas com o direito
+                                laboral, desde contratos de trabalho a litígios laborais.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-people"></i></div>
+                            <h3 class="h5 service-title">Direito da Família</h3>
+                            <p class="service-text mb-0">Consultoria e apoio em matérias relacionadas com o direito da família,
+                                incluindo divórcios, regulação das responsabilidades parentais e adopções.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-person-plus"></i></div>
+                            <h3 class="h5 service-title">Direito Civil</h3>
+                            <p class="service-text mb-0">Atuamos em diversas áreas do direito civil, assegurando a protecção dos
+                                direitos dos nossos clientes em litígios ou contratos civis.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-file-earmark-text"></i></div>
+                            <h3 class="h5 service-title">Contratos</h3>
+                            <p class="service-text mb-0">Elaboração e análise de contratos, garantindo a sua conformidade legal e
+                                proteção dos interesses dos nossos clientes.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-check-circle"></i></div>
+                            <h3 class="h5 service-title">Atos Notários e Outros Serviços</h3>
+                            <p class="service-text mb-0">Prestamos serviços de certificação de documentos e outros atos
+                                notariais, assegurando a autenticidade e validade jurídica.</p>
                         </div>
                     </div>
                 </div>
@@ -203,35 +206,35 @@
             <div class="container px-5 my-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6">
-                        <div class="text-center">
-                            <h2 class="fw-bolder">A Nossa Equipa</h2>
-                            <p class="lead fw-normal text-muted mb-5">A nossa equipa combina experiência e dedicação
+                        <div class="text-center mb-5">
+                            <h2 class="section-title">A Nossa Equipa</h2>
+                            <p class="lead fw-normal text-muted mb-0">A nossa equipa combina experiência e dedicação
                                 para prestar serviços jurídicos de confiança</p>
                         </div>
                     </div>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="assets\images\sandra.jpg" alt="..." />
-                            <div class="card-body p-4">
-                                <a class="text-decoration-none link-dark stretched-link">
-                                    <h5 class="card-title mb-3">Sandra Caldeira</h5>
-                                </a>
-                                <p class="card-text mb-0">Sócia Fundadora</p>
-                                <p class="card-text mb-0">CP: 53303f</p>
+                <div class="row gx-5 g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team-card">
+                            <div class="team-photo">
+                                <img src="assets\images\sandra.jpg" alt="Sandra Caldeira" />
+                            </div>
+                            <div class="team-info">
+                                <h3 class="h5 mb-1">Sandra Caldeira</h3>
+                                <span class="team-role">Sócia Fundadora</span>
+                                <span class="team-cp">CP: 53303f</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="assets\images\tania.jpg" alt="..." />
-                            <div class="card-body p-4">
-                                <a class="text-decoration-none link-dark stretched-link">
-                                    <h5 class="card-title mb-3">Tânia Tomaz</h5>
-                                </a>
-                                <p class="card-text mb-0">Advogada Colaboradora</p>
-                                <p class="card-text mb-0">CP: 63603f</p>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team-card">
+                            <div class="team-photo">
+                                <img src="assets\images\tania.jpg" alt="Tânia Tomaz" />
+                            </div>
+                            <div class="team-info">
+                                <h3 class="h5 mb-1">Tânia Tomaz</h3>
+                                <span class="team-role">Advogada Colaboradora</span>
+                                <span class="team-cp">CP: 63603f</span>
                             </div>
                         </div>
                     </div>
@@ -239,19 +242,32 @@
             </div>
         </section>
         <!-- Encontre-nos section -->
-        <section class="py-5" id="ondeestamos">
+        <section class="py-5 bg-light" id="ondeestamos">
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
-                    <h1 class="fw-bolder">Onde Estamos</h1>
+                    <h2 class="section-title">Onde Estamos</h2>
                     <p class="lead fw-normal text-muted mb-0">Estamos aqui para ajudar. Visite-nos no nosso escritório
                     </p>
                 </div>
-                <!-- Responsive Google Map -->
-                <div class="ratio ratio-16x9">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1126.30762483245!2d-7.926136856051292!3d37.01745276144872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0552db41e8ec0b%3A0x395ced133181bd48!2sR.%20Ataide%20de%20Oliveira%2057%2C%208000-076%20Faro!5e0!3m2!1spt-PT!2spt!4v1725984592232!5m2!1spt-PT!2spt"
-                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                <div class="row gx-5 align-items-stretch">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <!-- Responsive Google Map -->
+                        <div class="ratio ratio-16x9 map-card">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1126.30762483245!2d-7.926136856051292!3d37.01745276144872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0552db41e8ec0b%3A0x395ced133181bd48!2sR.%20Ataide%20de%20Oliveira%2057%2C%208000-076%20Faro!5e0!3m2!1spt-PT!2spt!4v1725984592232!5m2!1spt-PT!2spt"
+                                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="location-card">
+                            <h3 class="h5 mb-3">O Nosso Escritório</h3>
+                            <p class="mb-2"><i class="bi bi-geo-alt me-2"></i>Rua Ataíde Oliveira 57, 8000-222 Faro</p>
+                            <p class="mb-2"><i class="bi bi-telephone me-2"></i><a href="tel:289880540">289 880 540</a></p>
+                            <p class="mb-4"><i class="bi bi-envelope me-2"></i><a href="mailto:sc.advogados.oa@gmail.com">sc.advogados.oa@gmail.com</a></p>
+                            <a class="btn btn-accent btn-pill" href="https://www.google.com/maps/search/?api=1&query=Rua+Ata%C3%ADde+Oliveira+57%2C+8000-222+Faro" target="_blank" rel="noopener">Ver Direções</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -259,31 +275,45 @@
         <section class="py-5" id="contacte-nos">
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
-                    <h1 class="fw-bolder">Contacte-nos</h1>
+                    <h2 class="section-title">Contacte-nos</h2>
                     <p class="lead fw-normal text-muted mb-0">Entre em contacto conosco para obter mais informações
                     </p>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6">
-                        <p>
-                            Telefone: <a class="text-black-50 mb-4" href="tel:289880540">289 880 540</a>
-                        </p>
-                        <p>
-                            Morada: <a class="text-black-50 mb-4" href="#ondeestamos">Rua Ataíde Oliveira 57 8000-222 Faro</a>
-                        </p>
-                        <p>
-                            Email geral: <a class="text-black-50 mb-4" href="mailto:sc.advogados.oa@gmail.com">sc.advogados.oa@gmail.com </a>
-                        </p>
-                        <p>
-                            Fax: <a class="text-black-50 mb-4" href="fax:289880559">289 880 559 </a>
-                        </p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-lg-3">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+                            <h3 class="h6 mb-1">Telefone</h3>
+                            <a href="tel:289880540">289 880 540</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                            <h3 class="h6 mb-1">Morada</h3>
+                            <a href="#ondeestamos">Rua Ataíde Oliveira 57, 8000-222 Faro</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                            <h3 class="h6 mb-1">Email</h3>
+                            <a href="mailto:sc.advogados.oa@gmail.com">sc.advogados.oa@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="bi bi-printer"></i></div>
+                            <h3 class="h6 mb-1">Fax</h3>
+                            <a href="fax:289880559">289 880 559</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <!-- Footer-->
-    <footer class="bg-dark py-4 mt-auto">
+    <footer class="site-footer bg-dark py-4 mt-auto">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
